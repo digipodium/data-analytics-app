@@ -4,6 +4,8 @@ import plotly.express as px
 import numpy as np
 # change plotly theme
 
+st.set_page_config(layout='wide')
+
 # function to load the data only once
 @st.cache_data()
 def load_titanic_data():
