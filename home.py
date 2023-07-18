@@ -28,7 +28,7 @@ gender_count = df['sex'].value_counts()
 level_wise_count = df['pclass'].value_counts()
 boarding_count = df['embarked'].value_counts()
 c1, c2, c3 = st.columns(3)
-c1.metric('Total Records', rows)
+c1.metric('Total Records', rows)    
 c2.metric('Total Columns', cols)
 c3.metric('Survivors', total_survivors, delta=-deaths )
 # if we have a dataframe - then we can use column names
